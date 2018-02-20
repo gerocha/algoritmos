@@ -16,13 +16,14 @@ neste momento o codigo sabe que a[4] = 59 e a[2] = 41 dentro do while, entao o r
 [26, 31, 41, 41, 58, 59]
 
 2.1-2
+
 INSERTION-SORT-REVERSE(A)
-for j <- comprimento(a) to 2
-  do chave <- a[j]
-    i <- j - 1
-    while i < j e a[i] < chave
+for j <- comprimento(a) to 2 # 5
+  do chave <- a[j] # 58
+    i <- j - 1 # 5
+    while i > 0 e a[i] < chave
       do a[i+1] = a[i]
-      i <- i + 1
+      i <- i - 1
     a[i+1] = chave
 
 [26, 31, 41, 59, 41, 58]
